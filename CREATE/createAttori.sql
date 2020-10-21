@@ -1,0 +1,6 @@
+CREATE TABLE ATTORI(
+	codAttore INT NOT NULL PRIMARY KEY,
+	nome TEXT NOT NULL,
+	annoNascita INT NOT NULL,
+	nazionalita TEXT NOT NULL
+)

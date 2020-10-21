@@ -1,0 +1,1 @@
+SELECT DISTINCT codR FROM sedeA

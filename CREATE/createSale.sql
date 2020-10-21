@@ -1,0 +1,6 @@
+CREATE TABLE SALE (
+	codsala INT PRIMARY KEY NOT NULL,
+	posti INT NOT NULL,
+	nome TEXT NOT NULL,
+	citta TEXT NOT NULL
+)

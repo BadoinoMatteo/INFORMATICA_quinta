@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Palestra Fitness">
+    <meta name="author" content="Matteo Badoino">
+    <title>PALESTRA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        #jumbotron {
+            text-align: center;
+            background: linear-gradient(to right, red, yellow)
+        }
+        
+        #nav {
+            align: center;
+            color: white
+        }
+        
+        #Contcard {
+            margin-left: 10%;
+            margin-right: 10%
+        }
+        
+        #card {
+            width: 600px;
+            text-align: center;
+        }
+        
+        #footer {
+            background: linear-gradient(to right, red, yellow)
+        }
+        #form{
+            text-align:center;
+            background:red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar navbar-dark bg-primary" id=nav>
+        <a class="navbar-brand">
+            <img class="card-img-top" src="logo.png" alt="Card image cap" width="50px" height="100px">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+            </a>
+        <div class="collapse navbar-collapse" id="nav-content">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chisiamo.html">Centro Fitness</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="miodropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Corsi</a>
+                    <div class="dropdown-menu" aria-labelledby="miodropdown">
+                        <a class="dropdown-item" href="compatte.html">Aerobica</a>
+                        <a class="dropdown-item" href="mirrorless.html">Tone up</a>
+                        <a class="dropdown-item" href="mirrorless.html">Posturale</a>
+                        <a class="dropdown-item" href="mirrorless.html">Total body</a>
+                        <a class="dropdown-item" href="mirrorless.html">GAG</a>
+                        <a class="dropdown-item" href="mirrorless.html">Zumba</a>
+                        <a class="dropdown-item" href="mirrorless.html">Yoga</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chisiamo.html">Personal Trainer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chisiamo.html">Dove siamo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chisiamo.html">Contatti</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron" id=jumbotron>
+        <h1>"IL CORPO UMANO E' UN TEMPIO E COME TALE VA CURATO E RISPETTATO, SEMPRE"</h1>
+        <h4>Ippocrate</h4> <br>
+        <button type="button" class="btn btn-primary">SCOPRI I NOSTRI CORSI</button>
+    </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2" style="margin-left: 10%; margin-right: 10%;">
+        <div class="card" id=card>
+            <img class="card-img-top" src="corsi.png" alt="Card image cap" height="300px">
+            <div class="card-body">
+                <h5 class="card-title">Corsi</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" id=card>
+            <img class="card-img-top" src="fitness.png" alt="Card image cap" height="300px">
+            <div class="card-body">
+                <h5 class="card-title">Fitness</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" id=card>
+            <img class="card-img-top" src="relax.jpg" alt="Card image cap" height="300px">
+            <div class="card-body">
+                <h5 class="card-title">Area relax</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" id=card>
+            <img class="card-img-top" src="PersonalTrainer.jpg" alt="Card image cap" height="300px">
+            <div class="card-body">
+                <h5 class="card-title">Personal Trainer</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id=form>
+        <h1> FORM PER RICHIEDERE INFORMAZIONI </h1>
+        <form name="f1" action="form.php" method="get" >
+                        inserisci nome:&nbsp;&nbsp;<input type="text" id="nome" name="nome" value="" /></br></br>
+                        inserisci cognome:&nbsp;&nbsp;<input type="text" id="cognome" name="cognome" value="" /></br></br>
+                        inserisci eta':&nbsp;&nbsp;<input type="text" id="eta" name="eta" value="" /></br></br>
+                        inserisci sesso:&nbsp;&nbsp;<input type="radio" name="sesso" value="M"/>M<input type="radio" name="sesso" value="F"/>F</br><br>
+                        <input type="checkbox" name="chkInfo[]" value="Yoga"/>Yoga
+                        </br><input type="checkbox" name="chkInfo[]" value="Fitness"/>Fitness
+                        </br><input type="checkbox" name="chkInfo[]" value="Personal Trainer"/>Personal Trainer
+                        </br><input type="checkbox" name="chkInfo[]" value="Relax"/>Relax</br></br>
+                        inserisci email:&nbsp;&nbsp;<input type="text" id="email" name="email" value="" /></br></br>
+                        <input type="submit" value="Invia" id="btnInvia">
+                        
+                </form>
+    </div>
+    <div id=footer>
+        <footer id="bottom" class="row text-left p-4">
+            <div class="col-3">
+                <h3 style="text-align:center">Informazioni legali:</h3>
+                <p style="text-align:center"> sito realizzato da Matteo Badoino<br> Sede legale: Paperino (PR) <br> P.IVA:589308573839 </p>
+            </div>
+            <div class="col-6">
+                <h3 style="text-align:center">Orari</h3>
+                <p style="text-align:center"> APERTI DAL LUNEDI' AL VENERDI' DALLE 9:30 ALLE 22:30<br> SABATO DALLE 8:30 ALLE 22:30</p>
+            </div>
+            <div class="col-3">
+                <h3 style="text-align:center">Copyright &copy; The Author</h3>
+            </div>
+
+            
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>

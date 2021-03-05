@@ -1,0 +1,1 @@
+--Il regista ed il titolo dei film in cui recitano meno di 6 attori

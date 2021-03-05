@@ -1,0 +1,2 @@
+ SELECT DISTINCT Titolo, genere FROM FILM F INNER JOIN PROIEZIONE P ON(F.codFilm=P.codFilm)
+	WHERE dataProiezione='2004/12/25'

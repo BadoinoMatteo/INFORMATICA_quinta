@@ -1,0 +1,6 @@
+CREATE TABLE RECITA(
+	codAttore INT NOT NULL,
+	codFilm INT NOT NULL,
+	FOREIGN KEY (codAttore) REFERENCES ATTORI(codAttore),
+	FOREIGN KEY (codFilm) REFERENCES FILM (codFilm)
+)
